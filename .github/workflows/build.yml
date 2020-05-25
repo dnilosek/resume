@@ -22,6 +22,9 @@ jobs:
           name: resume
           path: nilosek-resume.pdf
   deploy_pdf:
+    runs-on: ubuntu-latest
+    needs: build_latex
+    steps:
       - name: Get gh pages repo
         uses: actions/checkout@master
         with:
