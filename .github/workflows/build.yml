@@ -38,8 +38,6 @@ jobs:
         run: |
            git config --local user.email "action.github.com"
            git config --local user.name "GitHub Action"
+           git add nilosek-resume.pdg
            git commit -m "Pushed by GitHub Action" -a
-      - name: Push to master
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{secrets.MY_PAT}}
+           git push origin master
