@@ -38,6 +38,6 @@ jobs:
         run: |
            git config --local user.email "action.github.com"
            git config --local user.name "GitHub Action"
-           git add nilosek-resume.pdg
+           git add nilosek-resume.pdf
            git commit -m "Pushed by GitHub Action" -a
            git push origin master
