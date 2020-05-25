@@ -21,7 +21,7 @@ jobs:
         with:
           name: resume
           path: nilosek-resume.pdf
-  deploy:
+  deploy_pdf:
       - name: Get gh pages repo
         uses: actions/checkout@master
         with:
