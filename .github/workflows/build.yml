@@ -16,3 +16,27 @@ jobs:
         with:
           root_file: nilosek-resume.tex
           args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+      - name: Save pdf file
+        uses: actions/upload-artifact@master
+        with:
+          name: resume
+          path: nilosek-resume.pdf
+  deploy:
+      - name: Get gh pages repo
+        uses: actions/checkout@master
+        with:
+          repository: dnilosek/dnilosek.github.io
+          token: ${{secrets.MY_PAT}}
+      - name: Pull saved pdf
+        uses: actions/download-artifact@master
+        with:
+          name: resume
+      - name: Commit file
+        run: |
+           git config --local user.email "action.github.com"
+           git config --local user.name "GitHub Action"
+           git commit -m "Pushed by GitHub Action" -a
+      - name: Push to master
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{secrets.MY_PAT}}
