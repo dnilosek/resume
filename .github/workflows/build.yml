@@ -26,23 +26,19 @@ jobs:
         with:
           name: resume
           path: rendercv_output/Dave_Nilosek_CV.pdf
-  deploy_pdf:
+  create_release:
     runs-on: ubuntu-latest
     needs: build_pdf
+    if: github.ref == 'refs/heads/master'
     steps:
-      - name: Get gh pages repo
-        uses: actions/checkout@master
-        with:
-          repository: dnilosek/dnilosek.github.io
-          token: ${{secrets.MY_PAT}}
-      - name: Pull saved pdf
-        uses: actions/download-artifact@master
+      - name: Download PDF artifact
+        uses: actions/download-artifact@v4
         with:
           name: resume
-      - name: Commit file
-        run: |
-          git config --local user.email "action.github.com"
-          git config --local user.name "GitHub Action"
-          git add resume.pdf
-          git commit -m "Pushed by GitHub Action" -a
-          git push origin master
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ github.run_number }}
+          name: Resume v${{ github.run_number }}
+          files: Dave_Nilosek_CV.pdf
+          generate_release_notes: true
