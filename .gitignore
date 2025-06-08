@@ -6,3 +6,5 @@
 *.pdf
 *.gz
 *.swp
+
+rendercv_output/*
