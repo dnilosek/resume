@@ -2,8 +2,8 @@ name: Build and Deploy PDF
 
 on:
   push:
-   branches:
-     - master
+    branches:
+      - master
 
 jobs:
   build_latex:
@@ -14,7 +14,7 @@ jobs:
       - name: Compile LaTeX document
         uses: dante-ev/latex-action@master
         with:
-          root_file: nilosek-resume.tex
+          root_file: resume.tex
           args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
       - name: Save pdf file
         uses: actions/upload-artifact@master
@@ -36,8 +36,8 @@ jobs:
           name: resume
       - name: Commit file
         run: |
-           git config --local user.email "action.github.com"
-           git config --local user.name "GitHub Action"
-           git add nilosek-resume.pdf
-           git commit -m "Pushed by GitHub Action" -a
-           git push origin master
+          git config --local user.email "action.github.com"
+          git config --local user.name "GitHub Action"
+          git add resume.pdf
+          git commit -m "Pushed by GitHub Action" -a
+          git push origin master
