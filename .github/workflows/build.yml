@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: resume
-          path: nilosek-resume.pdf
+          path: resume.pdf
   deploy_pdf:
     runs-on: ubuntu-latest
     needs: build_latex
