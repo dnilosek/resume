@@ -1,0 +1,279 @@
+cv:
+  name: Dave Nilosek, PhD
+  location: Seattle, WA
+  email: david.nilosek@gmail.com
+  phone: +1-207-337-3307
+  social_networks:
+    - network: LinkedIn
+      username: dnilosek
+    - network: GitHub
+      username: dnilosek
+    - network: Google Scholar
+      username: EvjtcE0AAAAJ
+  sections:
+    about_me:
+      - I'm a startup-minded engineering leader and applied scientist with a track record of turning cutting-edge ideas into real, scalable products. With deep roots in computer vision, remote sensing, and geospatial data systems, I’ve built and led teams across early-stage ventures and growth-phase startups, bringing novel tech from prototype to production.
+      - I specialize in getting ambitious, technically complex projects off the ground—fast. I thrive in high-ownership environments, love working hands-on across the stack, and bring a pragmatic approach to building intelligent systems that actually ship.
+    skills:
+      - label: Programming
+        details: Typescript/Javascript, Python, C++ (C++11 and later), HTML/CSS
+      - label: Frameworks
+        details: React.js, Next.js, Node.js, Express.js, Turborepo, FastAPI, Tensorflow, OpenCV, GDAL, Tailwindcss, OpenAI and similar SDKs
+      - label: Subject expertise
+        details: Remote Sensing, Computer Vision, Machine Learning, Geospatial Information Systems, Photogrammetry
+    experience:
+      - company: ITPipes
+        position: SVP of Technology
+        start_date: 2024-10
+        end_date: present
+        location: Seattle, WA, USA
+        highlights:
+          - Leading the design and development of a next-generation geospatial data platform for wastewater infrastructure.
+          - Building and managing a high-performing engineering team focused on automating video inspection analysis using computer vision and geospatial intelligence.
+      - company: EarthOptics
+        position: SVP of Software and Data Engineering
+        start_date: 2022-03
+        end_date: 2024-11
+        location: Arlington, VA, USA (Remote)
+        highlights:
+          - Built and scaled software and data engineering teams to deliver ML/CV solutions for soil health and carbon measurement.
+          - Architected and deployed a in-field software system for collecting sensor data, actively used across thousands of acres.
+          - Developed and deployed an in-line soil compaction prediction system integrated directly with CaseIH tractor operations.
+      - company: HySpecIQ
+        position: VP of Software Engineering and Imaging Science
+        start_date: 2021-05
+        end_date: 2022-02
+        location: Herndon, VA, USA (Remote)
+        highlights:
+          - Led simulation and modeling of synthetic hyperspectral imagery for a novel satellite-based Earth observation system.
+          - Oversaw development and deployment of marketing and analytics platform
+      - company: Nilotech Consulting
+        position: Owner
+        start_date: 2020-08
+        end_date: 2022-03
+        location: Seattle, WA, USA
+        highlights:
+          - Served as a systems engineer for PhoticSentry, building a laser-based mosquito elimination system.
+          - Developed an embedded stereo tracking system capable of real-time, high-speed (120 fps) object tracking.
+      - company: EagleView Technologies
+        position: Senior Director of Image Processing
+        start_date: 2018-12
+        end_date: 2020-08
+        location: Bellevue, WA, USA
+        highlights:
+          - Directed multiple teams responsible for EagleView’s end-to-end aerial image processing pipeline.
+          - Designed and implemented next-gen mapping systems using AWS microservices, Go, Python, and modern C++.
+          - Led cloud cost modeling and optimization; built internal tooling with Go and React.
+          - Built supporting backend and frontend services using Go and React for internal applications.
+      - company: EagleView Technologies
+        position: Software Engineering Manager
+        start_date: 2016-10
+        end_date: 2018-12
+        location: Bothell, WA, USA
+        highlights:
+          - Built and managed a software team developing scalable photogrammetric and multi-view stereo pipelines.
+          - Delivered a production-grade cloud-based processing system handling over 100,000 images per day.
+      - company: EagleView Technologies
+        position: Research Scientist
+        start_date: 2013-09
+        end_date: 2016-10
+        location: Bothell, WA, USA
+        highlights:
+          - Led research efforts applying photogrammetry to UAS data for infrastructure assessment and 3D modeling.
+          - Designed and validated workflows for producing high-resolution 3D models from oblique/nadir imagery.
+    education:
+      - institution: Rochester Institute of Technology
+        area: Imaging Science
+        degree: PhD
+        start_date: 2008-11
+        end_date: 2014-03
+        location: Rochester, NY, USA
+        summary:
+        highlights:
+          - Thesis - "Spectrally accurate Simulation of Urban Structures Generated from Aerial Imagery"
+          - Participated in the Los Alamos National Lab graduate internship program using structure from motion techniques to analyze smoke plume volume from persistent surveillance IR imagery
+      - institution: Rochester Institute of Technology
+        area: Imaging Science
+        degree: BS
+        start_date: 2005-09
+        end_date: 2008-11
+        location: Rochester, NY, USA
+    selected_patents_and_publications:
+      - title: System using image connectivity to reduce bundle size for bundle adjustment
+        authors:
+          - David Nilosek
+        url: https://patents.google.com/patent/US11625907B2/en
+        journal: US Patent 11625907B2
+        date: 2023-04
+      - title: Augmented three dimensional point collection of vertical structures
+        authors:
+          - Steven Schultz
+          - David Nilosek
+          - David Petterson
+          - Timothy Harrington
+        journal: US Patent 9292913B2
+        url: https://patents.google.com/patent/US9292913/en
+        date: 2016-03
+      - title: Assessing geoaccuracy of structure from motion point clouds from long-range image collections
+        authors:
+          - David Nilosek
+          - Derek Walvoord
+          - Carl Salvaggio
+        doi: 10.1117/1.OE.53.11.113112
+        url: https://doi.org/10.1117/1.OE.53.11.113112
+        journal: Optical Engineering
+        date: 2014-11
+
+    projects:
+      - name: "[Pnyx.ai](https://www.pnyx.ai/)"
+        date: 2024-12
+        summary: An AI-agent powered web application for aggregating Discord and Telegram conversations from multiple servers into a single interface for topic and trend analysis
+        highlights:
+          - Developed frontend, backend, messaging platform integrations, and AI agent for the application.
+          - Have collected an analyzed over 3 million messages from dozens of Discord and Telegram servers.
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 2cm
+    bottom_margin: 2cm
+    left_margin: 2cm
+    right_margin: 2cm
+    show_page_numbering: true
+    show_last_updated_date: true
+  colors:
+    text: rgb(0, 0, 0)
+    name: rgb(0, 79, 144)
+    connections: rgb(0, 79, 144)
+    section_titles: rgb(0, 79, 144)
+    links: rgb(0, 79, 144)
+    last_updated_date_and_page_numbering: rgb(128, 128, 128)
+  text:
+    font_family: Source Sans 3
+    font_size: 10pt
+    leading: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+  links:
+    underline: false
+    use_external_link_icon: true
+  header:
+    name_font_family: Source Sans 3
+    name_font_size: 30pt
+    name_bold: true
+    photo_width: 3.5cm
+    vertical_space_between_name_and_connections: 0.7cm
+    vertical_space_between_connections_and_first_section: 0.7cm
+    horizontal_space_between_connections: 0.5cm
+    connections_font_family: Source Sans 3
+    separator_between_connections: ""
+    use_icons_for_connections: true
+    alignment: center
+  section_titles:
+    type: with-parial-line
+    font_family: Source Sans 3
+    font_size: 1.4em
+    bold: true
+    small_caps: false
+    line_thickness: 0.5pt
+    vertical_space_above: 0.5cm
+    vertical_space_below: 0.3cm
+  entries:
+    date_and_location_width: 4.15cm
+    left_and_right_margin: 0.2cm
+    horizontal_space_between_columns: 0.1cm
+    vertical_space_between_entries: 1.2em
+    allow_page_break_in_sections: true
+    allow_page_break_in_entries: true
+    short_second_row: false
+    show_time_spans_in: []
+  highlights:
+    bullet: •
+    top_margin: 0.25cm
+    left_margin: 0.4cm
+    vertical_space_between_highlights: 0.25cm
+    horizontal_space_between_bullet_and_highlight: 0.5em
+    summary_left_margin: 0cm
+  entry_types:
+    one_line_entry:
+      template: "**LABEL:** DETAILS"
+    education_entry:
+      main_column_first_row_template: "**INSTITUTION**, AREA"
+      degree_column_template: "**DEGREE**"
+      degree_column_width: 1cm
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        LOCATION
+        DATE
+    normal_entry:
+      main_column_first_row_template: "**NAME**"
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        LOCATION
+        DATE
+    experience_entry:
+      main_column_first_row_template: "**COMPANY**, POSITION"
+      main_column_second_row_template: |-
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column_template: |-
+        LOCATION
+        DATE
+    publication_entry:
+      main_column_first_row_template: "**TITLE**"
+      main_column_second_row_template: |-
+        AUTHORS
+        URL (JOURNAL)
+      main_column_second_row_without_journal_template: |-
+        AUTHORS
+        URL
+      main_column_second_row_without_url_template: |-
+        AUTHORS
+        JOURNAL
+      date_and_location_column_template: DATE
+locale:
+  language: en
+  phone_number_format: national
+  page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  last_updated_date_template: Last updated in TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: month
+  months: months
+  year: year
+  years: years
+  present: present
+  to: –
+  abbreviations_for_months:
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - June
+    - July
+    - Aug
+    - Sept
+    - Oct
+    - Nov
+    - Dec
+  full_names_of_months:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+rendercv_settings:
+  date: "2025-06-08"
+  render_command:
+  bold_keywords: []
