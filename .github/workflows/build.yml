@@ -20,12 +20,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Render CV
-        run: rendercv render "Dave_Nilosek,_PhD_CV.yaml"
+        run: |
+          rendercv render "Dave_Nilosek,_PhD_CV.yaml"
+          mv "rendercv_output/Dave_Nilosek,_PhD_CV.pdf" "rendercv_output/nilosek_resume.pdf"
       - name: Save pdf file
         uses: actions/upload-artifact@v4
         with:
           name: resume
-          path: rendercv_output/Dave_Nilosek,_PhD_CV.pdf
+          path: rendercv_output/nilosek_resume.pdf
   create_release:
     runs-on: ubuntu-latest
     needs: build_pdf
@@ -40,5 +42,5 @@ jobs:
         with:
           tag_name: v${{ github.run_number }}
           name: Resume v${{ github.run_number }}
-          files: Dave_Nilosek,_PhD_CV.pdf
+          files: nilosek_resume.pdf
           generate_release_notes: true
